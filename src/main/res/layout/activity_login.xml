@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B6779"
+    android:orientation="vertical"
+    tools:context="com.dev.zerat.goplabresult.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#0B6779"
+        android:src="@drawable/doctor" />
+
+
+        <EditText
+            android:id="@+id/LOGINACTIVITY_EDITTEXT_TCKN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#7F969B"
+            android:hint="TC Kimlik No"
+            android:text="29227396000"
+            android:inputType="number" />
+
+
+
+        <EditText
+            android:id="@+id/LOGINACTIVITY_EDITTEXT_FILENO"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#7F969B"
+            android:hint="Dosya No"
+            android:text="561850"
+
+            android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.dd.CircularProgressButton
+            android:id="@+id/LOGINACTIVITY_BUTTON_LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cpb_cornerRadius="48dp"
+            app:cpb_textError="TCKN veya Dosya No Hatalı! Tekrar deyiniz"
+            app:cpb_textComplete="Giriş Başarılı"
+            app:cpb_textIdle="Giriş"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
